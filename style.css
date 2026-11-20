@@ -1,0 +1,1654 @@
+/*Logo*/
+
+.logo-name {
+    color: goldenrod;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+/*Home Pg CSS*/
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+nav img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.menu a:hover {
+    color: gold;
+}
+
+.home-content {
+    position: relative;
+    z-index: 1;
+    top: 80px;
+    width: 45%;
+    margin-left: 5%;
+}
+
+#home {
+    height: 100vh;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: url("home.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-content h1 {
+    font-size: 40px;
+}
+
+.home-content p {
+    font-size: 20px;
+}
+
+.home-content button {
+    padding: 12px 25px;
+}
+
+#home .home-content {
+    position: relative;
+    z-index: 1;
+    top: 80px;
+    left: 0;
+}
+
+/* To style the home page heading, paragraph, and button */
+.home-content h1 {
+    color: gold;
+}
+
+.home-content p {
+    color: white;
+}
+
+#exploreBtn {
+    color: white !important;
+    transition: color 0.3s;
+}
+
+#exploreBtn:hover {
+    color: goldenrod !important;
+    background-color: black !important;
+    cursor: pointer;
+}
+
+/* Uiverse.io Button */
+
+.btn-17,
+.btn-17 *,
+.btn-17 :after,
+.btn-17 :before,
+.btn-17:after,
+.btn-17:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-17 {
+    background-color: #000;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    border-radius: 99rem;
+    border-width: 2px;
+    padding: 0.8rem 3rem;
+    z-index: 0;
+}
+
+.btn-17,
+.btn-17 .text-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-17 .text-container {
+    display: block;
+    mix-blend-mode: difference;
+}
+
+.btn-17 .text {
+    display: block;
+    position: relative;
+}
+
+.btn-17:hover .text {
+    animation: move-up-alternate 0.3s forwards;
+}
+
+@keyframes move-up-alternate {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(80%);
+    }
+    51% {
+        transform: translateY(-80%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.btn-17:after,
+.btn-17:before {
+    --skew: 0.2;
+    background: #fff;
+    content: "";
+    display: block;
+    height: 102%;
+    left: calc(-50% - 50% * var(--skew));
+    pointer-events: none;
+    position: absolute;
+    top: -104%;
+    transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+    transition: transform 0.2s ease;
+    width: 100%;
+}
+
+.btn-17:after {
+    --progress: 0%;
+    left: calc(50% + 50% * var(--skew));
+    top: 102%;
+    z-index: -1;
+}
+
+.btn-17:hover:before {
+    --progress: 100%;
+}
+
+.btn-17:hover:after {
+    --progress: -102%;
+}
+
+/* Button Click Color */
+
+/*Visitor Count*/
+
+.visitor-count {
+    background-color: #292929;
+    color: goldenrod;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.visitor-count b {
+    color: white;
+}
+
+/* Dark Mode Button */
+
+#darkModeBtn {
+    background-color: goldenrod;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #111111;
+    color: white;
+}
+
+.dark-mode section {
+    background-color: #111111;
+    color: white;
+}
+
+.dark-mode .card {
+    background-color: #222222;
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: #111111;
+    color: white;
+}
+
+/* All Cards */
+
+.light-mode .card,
+.light-mode .store-card,
+.light-mode .support-card,
+.light-mode .technology-card {
+    background-color: #eeeeee;
+    color: black;
+}
+
+/* Navbar */
+
+.light-mode nav {
+    background-color: white;
+}
+
+.light-mode nav a {
+    color: black;
+}
+
+/* Visitor Counter */
+
+.light-mode .visitor-count {
+    background-color: #eeeeee;
+    color: black;
+}
+
+/*Products Card CSS*/
+
+/* Products Section */
+
+.product-title {
+    text-align: center;
+    color: goldenrod;
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.product-subtitle {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Product Cards */
+.card {
+    width: 23%;
+    height: 300px;
+    margin: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 1px solid goldenrod;
+    border-radius: 12px;
+}
+
+/* Card Content */
+.card-body {
+    background-color: black;
+    color: white;
+}
+
+/* Card Images */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Card Heading */
+.card h3 {
+    margin-top: 10px;
+}
+
+/* Card Paragraph */
+.card p {
+    font-size: 14px;
+}
+
+/* Card Price */
+.card h4 {
+    color: darkgoldenrod;
+}
+
+Add to Cart Button */
+.card button {
+    background-color: black;
+    color: darkgoldenrod;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+/* Button Hover */
+.card button:hover {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+#products{
+   background-color: #111111;
+    padding: 30px;
+}
+
+
+/* Card Animation */
+.card {
+    transition: 0.5s;
+}
+
+/* Card Hover */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    transition: 0.5s;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+/* Uiverse.io Add to Cart Button */
+
+.btn {
+    --color: goldenrod;
+    --color2: black;
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+}
+
+.btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+
+.btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+    color: var(--color2);
+}
+
+.btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+
+/* Add to Cart Button Size Fix */
+
+.card .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    top: -10px;
+}
+
+/* Cart Notification */
+
+.cart-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #111;
+    color: white;
+    padding: 15px 25px;
+    border-left: 4px solid goldenrod;
+    border-radius: 8px;
+    display: none;
+    z-index: 9999;
+}
+
+.cart-message.show {
+    display: block;
+}
+
+/*Technology*/
+
+.technology-title {
+    text-align: center;
+    color: goldenrod;
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.technology-subtitle {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+#technology {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #111111;
+    padding: 30px;
+}
+
+.technology-title,
+.technology-subtitle {
+    width: 100%;
+}
+
+.technology-card{
+    width: 23%;
+    height: 300px;
+    margin: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 1px solid goldenrod;
+    border-radius: 12px;
+}
+
+/* Card Images */
+.technology-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.technology-card p{
+    color: darkgoldenrod;
+}
+
+/* Technology Card Animation */
+.technology-card {
+    transition: 0.5s;
+}
+
+/* Technology Card Hover */
+.technology-card:hover {
+    transform: translateY(-10px);
+}
+
+.technology-card img {
+    transition: 0.5s;
+}
+
+.technology-card img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Store Locator */
+
+#store {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#store h1 {
+    color: goldenrod;
+    font-size: 35px;
+}
+
+.store-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.store-card {
+    width: 23%;
+    background-color: black;
+    border: 1px solid goldenrod;
+    border-radius: 12px;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.store-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.store-card h3 {
+    color: goldenrod;
+}
+
+.store-card p {
+    font-size: 14px;
+}
+
+.store-card button {
+    background-color: goldenrod;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.store-card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* Store Card 3D Hover Animation */
+
+/* .store-card {
+    transition: transform 0.4s ease;
+    transform-style: preserve-3d;
+}
+
+.store-card:hover {
+    transform: perspective(800px) rotateX(5deg) rotateY(-5deg);
+    box-shadow: 0 10px 25px rgba(218, 165, 32, 0.4);
+} */
+
+/* .location-btn {
+    transition: 0.4s ease;
+}
+
+.location-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px goldenrod;
+    color: goldenrod;
+}
+
+.location-btn:active {
+    transform: scale(0.95);
+} */
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    .store-card {
+        width: 100%;
+    }
+}
+
+
+/* Support Section */
+
+#support {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+#support h1 {
+    color: goldenrod;
+}
+
+.support-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.support-card {
+    width: 33.33%;
+    min-height: 350px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #111111, #262626);
+    border: 1px solid goldenrod;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s;
+    position: relative;
+}
+
+.support-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.support-card h3 {
+    color: goldenrod;
+    margin-top: 15px;
+}
+
+.support-card p {
+    color: white;
+    line-height: 1.5;
+}
+
+/* Hover Animation */
+
+.support-card:hover {
+    transform: perspective(800px) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 0 20px goldenrod;
+}
+
+.support-card:hover img {
+    transform: scale(1.05);
+}
+
+.support-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(218, 165, 32, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.support-card:hover::before {
+    left: 100%;
+}
+
+.support-card {
+    width: 33.33%;
+    padding: 3px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    border: 1px solid goldenrod;
+    border-radius: 12px;
+    min-height: 280px;
+}
+
+.support-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.support-card h3 {
+    color: goldenrod;
+}
+
+.support-card p {
+    color: white;
+} */
+
+/* About Us */
+
+#about {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#about h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#about .about-text {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+#about {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+#about h1 {
+    color: goldenrod;
+}
+
+.about-text {
+    margin: 20px;
+    font-size: 17px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-card {
+    width: 33.33%;
+    padding: 15px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #111111;
+    border: 1px solid goldenrod;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    min-height: 390px;
+}
+
+.about-card h3 {
+    color: goldenrod;
+}
+
+.about-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    isolation: isolate;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-title {
+    color: goldenrod;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.small-desc {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: white;
+}
+
+.go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, goldenrod, #8B6508);
+    border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+    color: white;
+    font-family: courier, sans;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: linear-gradient(135deg, #8B6508, goldenrod);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+}
+
+.card:hover:before {
+    transform: scale(28);
+}
+
+.card .small-desc {
+    display: block;
+    color: white;
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover .card-title {
+    transition: all 0.5s ease-out;
+    color: white;
+}
+
+.about-card .small-desc {
+    display: block;
+    color: white;
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Contact Us */
+
+#contact {
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-heading h1 {
+    color: goldenrod;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-top: 1px solid goldenrod;
+    border-bottom: 1px solid goldenrod;
+}
+
+.contact-left {
+    width: 45%;
+}
+
+.contact-left h2 {
+    color: goldenrod;
+}
+
+.contact-left p {
+    font-size: 17px;
+}
+
+.contact-right {
+    width: 45%;
+}
+
+.contact-right h3 {
+    color: goldenrod;
+    margin-bottom: 20px;
+}
+
+.contact-right p {
+    margin-bottom: 15px;
+}
+
+.contact-footer {
+    text-align: center;
+    padding-top: 25px;
+    color: goldenrod;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+    background-color: #111111;
+    color: white;
+}
+
+body.dark-mode section {
+    background-color: #111111;
+    color: white;
+}
+
+body.dark-mode .card {
+    background-color: #222222;
+    color: white;
+}
+
+body.dark-mode .technology-card {
+    background-color: #222222;
+    color: white;
+}
+
+body.dark-mode footer {
+    background-color: #111111;
+    color: white;
+}
+
+/* Ticker */
+
+.ticker {
+    background-color: #111111;
+    color: goldenrod;
+    padding: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ticker-text {
+    display: inline-block;
+    animation: move 25s linear infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* ===================================================================
+   NEW CODE ADDED FOR SRS REQUIREMENTS
+   (everything above this line is the original code)
+   =================================================================== */
+
+
+/* ---------- General ---------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* so that the menu does not hide the top of a section */
+section {
+    scroll-margin-top: 90px;
+}
+
+/* space at the bottom for the ticker */
+body {
+    padding-bottom: 40px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/* ---------- Menu (hover, click color, fade) ---------- */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.menu a {
+    margin-right: 0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* color when the mouse is pressed on a menu */
+.menu a:active {
+    color: white;
+    background-color: darkgoldenrod;
+}
+
+/* color of the menu that was clicked */
+.menu a.active {
+    background-color: goldenrod;
+    color: black;
+}
+
+.menu a.active:hover {
+    color: black;
+}
+
+/* menus fade in one by one when the page opens */
+.menu-links a {
+    animation: menuFade 0.8s ease both;
+}
+
+.menu-links a:nth-child(1) { animation-delay: 0.1s; }
+.menu-links a:nth-child(2) { animation-delay: 0.2s; }
+.menu-links a:nth-child(3) { animation-delay: 0.3s; }
+.menu-links a:nth-child(4) { animation-delay: 0.4s; }
+.menu-links a:nth-child(5) { animation-delay: 0.5s; }
+.menu-links a:nth-child(6) { animation-delay: 0.6s; }
+.menu-links a:nth-child(7) { animation-delay: 0.7s; }
+.menu-links a:nth-child(8) { animation-delay: 0.8s; }
+
+@keyframes menuFade {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* the section fades in after its menu is clicked */
+.section-fade {
+    animation: sectionFade 1s ease;
+}
+
+@keyframes sectionFade {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+/* menu button (hidden on big screens) */
+#menuBtn {
+    display: none;
+    background-color: goldenrod;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* ---------- Visitor count with logo ---------- */
+
+.visitor-count {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.visitor-count img {
+    width: 28px;
+    height: 28px;
+}
+
+
+/* ---------- Product line-up buttons ---------- */
+
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.filter-btn {
+    background-color: black;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #3a2e0a;
+}
+
+.filter-btn.active {
+    background-color: goldenrod;
+    color: black;
+    font-weight: bold;
+}
+
+.filter-info {
+    text-align: center;
+    color: #cccccc;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* cards that are not in the selected line-up */
+#products .card.hidden-card {
+    display: none;
+}
+
+/* cards fade in when they appear */
+#products .card {
+    animation: fadeIn 0.6s;
+}
+
+.pricelist-link {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.pricelist-link a {
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 1px solid goldenrod;
+    padding-bottom: 3px;
+}
+
+.pricelist-link a:hover {
+    color: white;
+}
+
+
+/* ---------- Price List ---------- */
+
+#pricelist {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+#pricelist h1 {
+    color: goldenrod;
+    font-size: 35px;
+}
+
+.table-box {
+    max-width: 900px;
+    margin: 30px auto 0 auto;
+    overflow-x: auto;
+}
+
+#priceTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: black;
+    border: 1px solid goldenrod;
+}
+
+#priceTable th {
+    background-color: goldenrod;
+    color: black;
+    padding: 14px;
+}
+
+#priceTable td {
+    padding: 12px;
+    border-bottom: 1px solid #333333;
+}
+
+#priceTable tbody tr:hover td {
+    background-color: #222222;
+    color: gold;
+}
+
+.view-btn {
+    background-color: transparent;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+
+/* ---------- Details Popup ---------- */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-box {
+    position: relative;
+    display: flex;
+    width: 850px;
+    max-width: 92%;
+    max-height: 90vh;
+    overflow-y: auto;
+    background-color: #111111;
+    color: white;
+    border: 2px solid goldenrod;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(218, 165, 32, 0.4);
+    transform: scale(0.8);
+    transition: 0.4s;
+}
+
+.popup.show .popup-box {
+    transform: scale(1);
+}
+
+.popup-box img {
+    width: 45%;
+    object-fit: cover;
+}
+
+.popup-info {
+    flex: 1;
+    padding: 30px;
+    text-align: left;
+}
+
+.popup-info h2 {
+    color: goldenrod;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.popup-category {
+    color: #bbbbbb;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.popup-info h3 {
+    color: gold;
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.popup-info ul {
+    padding-left: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 8px;
+    right: 18px;
+    font-size: 36px;
+    color: goldenrod;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.popup-close:hover {
+    color: white;
+}
+
+
+/* ---------- Gallery ---------- */
+
+#gallery {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+#gallery h1 {
+    color: goldenrod;
+    font-size: 35px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px goldenrod;
+}
+
+/* Gallery image viewer */
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 5000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.lightbox.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-center {
+    text-align: center;
+}
+
+.lightbox-center img {
+    max-width: 70vw;
+    max-height: 75vh;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+}
+
+.lightbox-center p {
+    color: goldenrod;
+    font-size: 20px;
+}
+
+.lightbox-arrow {
+    background-color: transparent;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lightbox-arrow:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+
+/* ---------- Site Map ---------- */
+
+#sitemap {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 30px 20px 30px;
+    border-top: 1px solid goldenrod;
+}
+
+#sitemap h1 {
+    color: goldenrod;
+}
+
+.sitemap-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.sitemap-box h3 {
+    color: goldenrod;
+    border-bottom: 1px solid goldenrod;
+    padding-bottom: 8px;
+}
+
+.sitemap-box a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 6px 0;
+    transition: 0.3s;
+}
+
+.sitemap-box a:hover {
+    color: goldenrod;
+    padding-left: 10px;
+}
+
+.footer-links {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #333333;
+    color: #888888;
+}
+
+.footer-links a {
+    color: goldenrod;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+
+/* ---------- Ticker stays at the bottom of the screen ---------- */
+
+.ticker {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 2px solid goldenrod;
+    z-index: 900;
+}
+
+/* numbers keep the same width, so the ticker does not shake */
+.ticker-text {
+    font-variant-numeric: tabular-nums;
+}
+
+
+/* ---------- Responsive (tablet and mobile) ---------- */
+
+@media (max-width: 1280px) {
+
+    /* menu button shows, menu links fade in / out under the navbar */
+    #menuBtn {
+        display: block;
+    }
+
+    .menu-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 20px;
+        background-color: black;
+        border-bottom: 2px solid goldenrod;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+    }
+
+    .menu-links.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-links a {
+        text-align: center;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .card,
+    .technology-card {
+        width: 46%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+
+    .home-content {
+        width: 90%;
+    }
+
+    .store-container,
+    .support-container,
+    .about-container,
+    .contact-content,
+    .sitemap-container {
+        flex-direction: column;
+    }
+
+    .store-card,
+    .support-card,
+    .about-card,
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+
+    .about-card {
+        min-height: auto;
+    }
+
+    .popup-box {
+        flex-direction: column;
+    }
+
+    .popup-box img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .card,
+    .technology-card {
+        width: calc(100% - 20px);
+    }
+
+    nav img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .visitor-count img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .logo-name {
+        font-size: 15px;
+        margin-left: 6px;
+    }
+
+    .visitor-count {
+        padding: 6px;
+        font-size: 13px;
+        margin-left: 0;
+    }
+
+    .menu {
+        gap: 6px;
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+    }
+
+    #contact {
+        padding: 30px 15px;
+    }
+
+    .lightbox-arrow {
+        width: 38px;
+        height: 38px;
+    }
+
+    .lightbox-center img {
+        max-width: 60vw;
+    }
+}

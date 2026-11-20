@@ -1,9 +1,547 @@
-<html>
-<head> 
-<title>My First Website</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto Watches</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-<h1>Hello World!</h1>
-<p>I am a web developer</p>
-</body>  
+    
+<!--Navbar-->
+
+<nav>
+
+    <img src="Alberto Watches Golden Time Emblem.png" alt="Alberto Watches Logo">
+
+    <h2 class="logo-name">ALBERTO WATCHES</h2>
+
+    <div class="menu">
+
+    <div class="menu-links" id="menuLinks">
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#technology">Technology</a>
+    <a href="#store">Store Locator</a>
+    <a href="#support">Support</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</a>
+    </div>
+
+    <!-- All Navbar Links -->
+
+    <!-- Dark Mode Button -->
+    <button id="darkModeBtn">🌙</button>
+
+    <div class="visitor-count">
+        <img src="Alberto Watches Golden Time Emblem.png" alt="">
+        <i class="bi bi-people"></i>
+        Visitors: <span id="visitorCount">125</span>
+    </div>
+
+    <!-- Menu Button (only visible on mobile screens) -->
+    <button id="menuBtn">☰</button>
+</div>
+
+</div>
+</nav>
+
+<!-- Home -->
+    
+<section id="home">
+
+<div class="home-content">
+
+<h1>Discover Your Perfect Watch</h1>
+
+    <p>ALBERTO WATCHES</p>
+
+    <p>Timeless Style.Elegance.</p>
+
+    <p>Explore our collection of classic, luxury and smart watches.</p>
+
+<button class="btn-17" id="exploreBtn">
+    <span class="text-container">
+        <span class="text">Explore Collection</span>
+    </span>
+</button>
+
+</div>
+</section>
+
+
+<!--Products-->
+
+<section id="products">
+
+   <h1 class="product-title">Our Collection</h1>
+   <p class="product-subtitle">Discover Your Perfect Timepiece</p>
+
+   <!-- Product Line-up Buttons -->
+   <div class="filter-bar">
+       <button class="filter-btn active" data-category="All">All Watches</button>
+       <button class="filter-btn" data-category="Vintage">Vintage</button>
+       <button class="filter-btn" data-category="Luxury">Luxury</button>
+       <button class="filter-btn" data-category="Smart Watches">Smart Watches</button>
+       <button class="filter-btn" data-category="Fashion">Fashion</button>
+   </div>
+
+   <p class="filter-info" id="filterInfo"></p>
+
+   <div class="card-container">
+
+    <div class="card">
+<img src="menformal.png" alt="">  
+<h3>Men Formal</h3>
+<h4>Price: Rs. 9,500</h4>
+<button class="btn" onclick="addToCart()">Add to Cart</button>
+</div>
+
+   <div class="card">
+<img src="femalefancy.png" alt="">  
+<h3>Female Fancy</h3>
+<h4>Price: Rs. 2,000</h4>
+<button class="btn" onclick="addToCart()">Add to Cart</button>
+</div>
+
+
+   <div class="card">
+<img src="couple.png" alt="">
+<h3>Couple Watch</h3>
+<h4>Price: Rs. 7,900</h4>
+<button class="btn" onclick="addToCart()">Add to Cart</button>
+</div>
+
+   <div class="card">
+<img src="classic.png" alt="">
+<h3>Classic Watch</h3>
+<h4>Price: Rs. 4,500</h4>
+<button class="btn" onclick="addToCart()">Add to Cart</button>
+</div>
+
+   <div class="card">
+<img src="luxury.png" alt="">
+<h3>Luxury Watch</h3>
+<h4>Price: Rs. 12,000</h4>
+<button class="btn" onclick="addToCart()">Add to Cart</button>
+</div>
+
+   <div class="card">
+<img src="smart.png" alt="">
+<h3>Smart Watch</h3>
+<h4>Price: Rs. 4,500</h4>
+<button class="btn" onclick="addToCart()">Add to Cart</button>
+</div>
+
+   <div class="card">
+<img src="gold.png" alt="">      
+<h3>Gold Watch</h3>
+<h4>Price: Rs. 90,500</h4>
+<button class="btn" onclick="addToCart()">Add to Cart</button>
+</div>
+
+   <div class="card">
+<img src="silver.png" alt="">      
+<h3>Silver Watch</h3>
+<h4>Price: Rs. 19,300</h4>
+<button class="btn" onclick="addToCart()">Add to Cart</button>
+</div>
+
+</div>
+
+<p class="pricelist-link"><a href="#pricelist">View Complete Price List →</a></p>
+
+</section>
+
+<!-- Price List -->
+
+<section id="pricelist">
+
+    <h1>Price List</h1>
+    <p class="pricelist-subtitle">Prices of all Alberto Watches</p>
+
+    <div class="table-box">
+        <table id="priceTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Watch</th>
+                    <th>Line-up</th>
+                    <th>Price</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody id="priceBody">
+                <!-- Rows are added by script.js -->
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+<!--Technology-->
+
+<section id="technology">
+    <h1 class="technology-title">Watch Technology</h1>
+    <p class="technology-subtitle">Explore the Innovation Behind Every Watch</p>
+
+<div class="technology-card" >
+<img src="technology1.jpeg" alt="">
+<h3>Classic Gold</h3>
+<p>Premium gold finish</p>
+</div>
+
+<div class="technology-card" >
+<img src="technology2.jpeg" alt="">
+<h3>Blue Chronograph</h3>
+<p>Perfect time, every second. </p>
+</div>
+
+<div class="technology-card" >
+<img src="technology3.jpeg" alt="">
+<h3>Diamond Bezel</h3>
+<p>Shine that never fades</p>
+</div>
+
+<div class="technology-card" >
+<img src="technology4.jpeg" alt="">
+<h3>Smart Technology</h3>
+<p>Future on your wrist</p>
+</div>
+
+</section>
+
+<!-- Store Locator -->
+
+<section id="store">
+
+    <h1>Our Stores</h1>
+    <p>Find Your Nearest Alberto Watches Store in Karachi</p>
+
+    <div class="store-container">
+
+        <div class="box store-card">
+          <span></span>
+            <div class="content">
+                <img src="store1.jpg" alt="">
+                <h2>Clifton Store</h2>
+                <p>Clifton, Karachi</p>
+                <p>Opening: 9 AM - 9 PM</p>
+                <button class="btn" onclick="viewLocation('Clifton, Karachi')">View Location</button>
+            </div>
+        </div>
+
+        <div class="box store-card">
+          <span></span>
+            <div class="content">
+                <img src="store2.jpg" alt="">
+                <h2>DHA Store</h2>
+                <p>DHA Phase 6, Karachi</p>
+                <p>Opening: 10 AM - 10 PM</p>
+                <button class="btn" onclick="viewLocation('DHA Phase 6, Karachi')">View Location</button>
+            </div>
+        </div>
+
+        <div class="box store-card">
+          <span></span>
+            <div class="content">
+                <img src="store3.jpg" alt="">
+                <h2>Saddar Store</h2>
+                <p>Saddar, Karachi</p>
+                <p>Opening: 11 AM - 11 PM</p>
+                <button class="btn" onclick="viewLocation('Saddar, Karachi')">View Location</button>
+            </div>
+        </div>
+
+        <div class="box store-card">
+          <span></span>
+            <div class="content">
+                <img src="store4.jpg" alt="">
+                <h2>Tariq Road Store</h2>
+                <p>Tariq Road, Karachi</p>
+                <p>Opening: 12 AM - 12 PM</p>
+                <button class="btn" onclick="viewLocation('Tariq Road, Karachi')">View Location</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    </div>
+
+    <!-- <div class="support-card">
+            <img src="watchcare.jpg" alt="">
+            <h3>Watch Care</h3>
+            <p>Learn how to care for and maintain your watch.</p>
+    </div>
+
+    </div>
+
+</section> -->
+
+<!-- Support Section -->
+
+<section id="support">
+
+    <h1>Customer Support</h1>
+    <p>We Are Here to Help You</p>
+
+    <div class="support-container">
+
+        <div class="support-card card">
+            <img src="customer.jpg" alt="">
+            <h3 class="card-title">Customer Service</h3>
+            <p class="small-desc">
+                Our team is here to help you with your questions.
+            </p>
+            <div class="go-corner">
+                <div class="go-arrow">→</div>
+            </div>
+        </div>
+
+        <div class="support-card card">
+            <img src="product.jpg" alt="">
+            <h3 class="card-title">Product Assistance</h3>
+            <p class="small-desc">
+                Get help with our watches and product information.
+            </p>
+            <div class="go-corner">
+                <div class="go-arrow">→</div>
+            </div>
+        </div>
+
+        <div class="support-card card">
+            <img src="watchcare.jpg" alt="">
+            <h3 class="card-title">Watch Care</h3>
+            <p class="small-desc">
+                Learn how to care for and maintain your watch.
+            </p>
+            <div class="go-corner">
+                <div class="go-arrow">→</div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Gallery -->
+
+<section id="gallery">
+
+    <h1>Gallery</h1>
+    <p class="gallery-subtitle">A Closer Look at Our Timepieces (click any image to enlarge)</p>
+
+    <div class="gallery-grid">
+        <img src="menformal.png" alt="Men Formal Watch">
+        <img src="femalefancy.png" alt="Female Fancy Watch">
+        <img src="couple.png" alt="Couple Watch">
+        <img src="classic.png" alt="Classic Watch">
+        <img src="luxury.png" alt="Luxury Watch">
+        <img src="smart.png" alt="Smart Watch">
+        <img src="gold.png" alt="Gold Watch">
+        <img src="silver.png" alt="Silver Watch">
+        <img src="technology1.jpeg" alt="Classic Gold">
+        <img src="technology2.jpeg" alt="Blue Chronograph">
+        <img src="technology3.jpeg" alt="Diamond Bezel">
+        <img src="technology4.jpeg" alt="Smart Technology">
+    </div>
+
+</section>
+
+<!-- About Us -->
+
+<section id="about">
+
+    <h1>About Alberto Watches</h1>
+
+    <p class="about-text">
+        Alberto Watches is a full-service watch store
+        offering luxury timepieces, watch repair and
+        appraisal services with first-class service.
+    </p>
+
+    <div class="about-container">
+
+        <div class="about-card card">
+            <img src="collection.png" alt="">
+            <h3 class="card-title">Our Collection</h3>
+            <p class="small-desc">
+                Explore our finest selection of luxury watches.
+            </p>
+
+            <div class="go-corner">
+                <div class="go-arrow">→</div>
+            </div>
+        </div>
+
+        <div class="about-card card">
+            <img src="service.png" alt="">
+            <h3 class="card-title">Our Service</h3>
+            <p class="small-desc">
+                We offer watch repair and appraisal services.
+            </p>
+
+            <div class="go-corner">
+                <div class="go-arrow">→</div>
+            </div>
+        </div>
+
+
+        <div class="about-card card">
+            <img src="contact.png" alt="">
+            <h3 class="card-title">Contact Information</h3>
+
+            <p class="small-desc">
+                Email: info@albertowatches.com
+            </p>
+
+            <p class="small-desc">
+                Address: Karachi, Pakistan
+            </p>
+
+            <p class="small-desc">
+                Contact: +92 300 1234567
+            </p>
+
+            <div class="go-corner">
+                <div class="go-arrow">→</div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact Us -->
+
+<section id="contact">
+
+    <div class="contact-heading">
+        <h1>GET IN TOUCH</h1>
+        <p>We Would Love to Hear From You</p>
+    </div>
+
+    <div class="contact-content">
+
+        <div class="contact-left">
+            <h2>ALBERTO WATCHES</h2>
+            <p>
+                Timeless Style. Modern Elegance.
+                Connect with us for more information.
+            </p>
+        </div>
+
+        <div class="contact-right">
+
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> info@albertowatches.com</p>
+            <p><strong>Address:</strong> Karachi, Pakistan</p>
+            <p><strong>Phone:</strong> +92 300 1234567</p>
+
+        </div>
+
+    </div>
+
+    <div class="contact-footer">
+        <p>© 2026 Alberto Watches. All Rights Reserved.</p>
+    </div>
+
+</section>
+
+<!-- Site Map -->
+
+<section id="sitemap">
+
+    <h1>Site Map</h1>
+
+    <div class="sitemap-container">
+
+        <div class="sitemap-box">
+            <h3>Shop</h3>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#pricelist">Price List</a>
+        </div>
+
+        <div class="sitemap-box">
+            <h3>Explore</h3>
+            <a href="#technology">Technology</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#store">Store Locator</a>
+        </div>
+
+        <div class="sitemap-box">
+            <h3>Company</h3>
+            <a href="#support">Support</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+
+    </div>
+
+    <div class="footer-links">
+        <a href="#sitemap">Site Map</a> |
+        <a href="#gallery">Gallery</a> |
+        <a href="#about">About Us</a> |
+        <a href="#contact">Contact Us</a>
+    </div>
+
+</section>
+
+<!-- Watch Details Popup -->
+
+<div id="popup" class="popup">
+    <div class="popup-box">
+        <span id="popupClose" class="popup-close">&times;</span>
+        <img id="popupImg" src="" alt="">
+        <div class="popup-info">
+            <h2 id="popupName"></h2>
+            <p id="popupCategory" class="popup-category"></p>
+            <h3 id="popupPrice"></h3>
+            <p id="popupDesc"></p>
+            <ul id="popupSpecs"></ul>
+            <button class="btn" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<!-- Gallery Image Viewer -->
+
+<div id="lightbox" class="lightbox">
+    <span id="lightboxClose" class="popup-close">&times;</span>
+    <button id="prevBtn" class="lightbox-arrow">&#10094;</button>
+    <div class="lightbox-center">
+        <img id="lightboxImg" src="" alt="">
+        <p id="lightboxCaption"></p>
+    </div>
+    <button id="nextBtn" class="lightbox-arrow">&#10095;</button>
+</div>
+
+<!-- Cart Notification -->
+
+<div id="cartMessage" class="cart-message">
+    <h3>✓ Added to Cart!</h3>
+    <p>Your watch has been added successfully.</p>
+</div>
+
+<div class="ticker">
+    <div class="ticker-text">
+        ✦ <span id="tickerDate"></span> ✦ <span id="tickerTime"></span> ✦ <span id="tickerLocation">Location: Detecting...</span> ✦
+        ✦ ALBERTO WATCHES ✦ LUXURY WATCH BRAND ✦
+        PREMIUM QUALITY ✦ TIMELESS ELEGANCE ✦
+        EXCLUSIVE WATCH COLLECTION ✦ CLASSIC TIMEPIECES ✦
+        CRAFTED FOR PERFECTION ✦ ELEGANCE IN EVERY SECOND ✦
+        DISCOVER YOUR STYLE ✦ SOPHISTICATION MEETS INNOVATION ✦
+        YOUR TIME YOUR STYLE ✦
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
